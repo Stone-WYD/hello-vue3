@@ -3,7 +3,7 @@
     <div class="person">
         <h2>姓名：{{person.name}}</h2>
         <h2>年龄：{{person.age}}</h2>
-        <h2>年龄：{{person.tel}}</h2>
+        <h2>联系方式：{{person.tel}}</h2>
         <button @click="changeName">修改名字</button>
         <button @click="changeAge">修改年龄</button>
         <button @click="showTel">查看联系方式</button>

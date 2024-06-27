@@ -5,6 +5,8 @@
     <Car/>
     <br>
     <Person2/>
+    <br>
+    <Watch/>
 </template>
 
 <script lang="ts">
@@ -12,9 +14,10 @@
 import Person from './components/Person.vue'
 import Car from './components/Car.vue'
 import Person2 from './components/Person2.vue'
+import Watch from './components/Watch.vue'
 export default {
     name: 'App', // 组件名
-    components: {Car, Person, Person2} // 注册组件
+    components: {Car, Person, Person2, Watch} // 注册组件
 }
 </script>
 
