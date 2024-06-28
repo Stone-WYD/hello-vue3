@@ -1,4 +1,4 @@
-<!-- setUp 学习内容 -->
+<!-- setUp、roRefs 学习内容 -->
 <template>
     <div class="person">
         <h2>姓名：{{person.name}}</h2>

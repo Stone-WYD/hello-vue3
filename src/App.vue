@@ -7,6 +7,8 @@
     <Person2/>
     <br>
     <Watch/>
+    <br>
+    <WatchEffect/>
 </template>
 
 <script lang="ts">
@@ -15,9 +17,10 @@ import Person from './components/Person.vue'
 import Car from './components/Car.vue'
 import Person2 from './components/Person2.vue'
 import Watch from './components/Watch.vue'
+import WatchEffect  from './components/WatchEffect.vue'
 export default {
     name: 'App', // 组件名
-    components: {Car, Person, Person2, Watch} // 注册组件
+    components: {Car, Person, Person2, Watch, WatchEffect} // 注册组件
 }
 </script>
 
