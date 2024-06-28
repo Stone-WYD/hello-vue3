@@ -9,19 +9,34 @@
     <Watch/>
     <br>
     <WatchEffect/>
+    <br>
+    <Father/>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup name="App">
 // JS 或 TS
+import WatchEffect  from './components/WatchEffect.vue'
 import Person from './components/Person.vue'
 import Car from './components/Car.vue'
 import Person2 from './components/Person2.vue'
 import Watch from './components/Watch.vue'
-import WatchEffect  from './components/WatchEffect.vue'
-export default {
-    name: 'App', // 组件名
-    components: {Car, Person, Person2, Watch, WatchEffect} // 注册组件
-}
+import Father from './components/props/Father.vue'
+
+// ts的使用
+import {type PersonInter, type Persons} from '@/types'
+let person:PersonInter = {id: '123321', name: '张三', age: 60}
+// 数组，泛型
+let personList: Array<PersonInter> = [
+    {id: '123321', name: '张三', age: 60},
+    {id: '123322', name: '李四', age: 22},
+    {id: '123323', name: '王五', age: 11}
+]
+let personList2: Persons = [
+    {id: '123321', name: '张三', age: 60},
+    {id: '123322', name: '李四', age: 22},
+    {id: '123323', name: '王五', age: 11}
+]
+
 </script>
 
 <style>
