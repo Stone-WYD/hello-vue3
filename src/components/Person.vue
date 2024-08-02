@@ -62,7 +62,7 @@
     import { reactive, toRefs, toRef } from 'vue';
 
 
-    // 数据，原来写在 data 中，此时的 name、age、tel都不是响应式的
+    // 数据
     let person =  reactive({name: '张三', age: 18, tel: 13888888888})
 
     // toRefs 和 toRef 的使用

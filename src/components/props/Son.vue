@@ -12,7 +12,6 @@
 <script lang="ts" setup name="Son">
     // defineXxx 不需要引入，属于宏函数
     // import { defineProps, withDefaults } from 'vue'
-    import { withDefaults } from 'vue'
     import { type Persons } from '@/types'
 
     // 只接收传参

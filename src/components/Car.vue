@@ -35,7 +35,7 @@
         carBands[0].name = '修改后的汽车品牌'
     }
     function changeCar() {
-        // 这样改是不行的，这样改使得 car 这个引用指向了一个新的响应式对象。但是template绑定的是响应式对象，而不是引用，所以会失效。
+        // 这样改是不行的，这样改使得 car 这个引用指向了一个新的响应式对象。但是template绑定的是响应式对象而不是引用，所以只有在旧对象变化时才会重新渲染，所以会失效。
         // car = reactive({brand:'奥托', price:1}) 
         // assign 相当于把后面对象中的内容按照 key value 一个个赋值到 car 引用的对象上，所以是可行的。
         Object.assign(car, {brand:'奥托', price:1})

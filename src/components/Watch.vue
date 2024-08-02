@@ -158,7 +158,7 @@
         console.log('person.car变化了',newValue,oldValue)
     })*/
     
-    //写函数（开启深度监视）：
+    //写函数（开启深度监视）：car对象以直接赋值的方式改变，person也会发生变化，因为person是响应式的，所以使用到car的地方也会变化。
     watch(()=>person.car,(newValue,oldValue)=>{
         console.log('person.car变化了',newValue,oldValue)
     },{deep:true})
